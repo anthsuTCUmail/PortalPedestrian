@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>任意門路口模式 v3.1 測試</title>
+<style>
+  :root{--bg:#fffaf3;--fg:#222;--muted:#666;--card:#fff;--line:#e6dccd;--accent:#c2255c}
+  @media (prefers-color-scheme:dark){:root{--bg:#1b1917;--fg:#f2ede6;--muted:#b3aba0;--card:#262321;--line:#3b3631;--accent:#f06595}}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--fg);font-family:-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif;line-height:1.6}
+  main{max-width:560px;margin:0 auto;padding:24px 16px 48px}
+  h1{font-size:1.5rem;margin:0 0 4px}
+  p.sub{color:var(--muted);margin:0 0 20px}
+  a.card{display:block;text-decoration:none;color:inherit;background:var(--card);border:2px solid var(--line);border-radius:16px;padding:16px 18px;margin:12px 0}
+  a.card:active{border-color:var(--accent)}
+  a.card b{display:block;font-size:1.2rem;color:var(--accent)}
+  .note{font-size:.92rem;color:var(--muted);border-top:1px dashed var(--line);margin-top:24px;padding-top:12px}
+</style>
+</head>
+<body>
+<main>
+  <h1>任意門・路口模式</h1>
+  <p class="sub">portal-door v3.1 測試版　｜　依張開國博士〈用路人安全用路行為〉</p>
+  <a class="card" href="standard/index.html"><b>① 標準版（有行人號誌）</b>停 → 看號誌（綠燈、秒數夠）→ 綠燈後看左右 → 確認來車 → 走行穿線</a>
+  <a class="card" href="nosignal/index.html"><b>② 無號誌＋視野死角車</b>停下來後，一台公車會從左邊開過，擋住右邊開來的車</a>
+  <a class="card" href="senior/index.html"><b>③ 長輩版</b>坐著用按鈕前進、特大字、步行速度 0.7、綠燈 30 秒、車速較慢、轉頭門檻 35°</a>
+  <p class="note">需要允許相機。找一塊有紋理的地板，先慢慢左右移動手機 2～3 秒，再點地面放門。網址後面加 <code>?debug=1</code> 可以看到除錯資訊（朝向角、號誌、來車時間）。走動時請注意真實環境的安全。</p>
+</main>
+</body>
+</html>
